@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>curl-to-PHP: Convert Curl commands to PHP code</title>
+		<title>curl-to-PHP: 将CURL命令行转换为PHP curl代码</title>
 		<meta charset="utf-8">
 		<script src="resources/js/jquery.min.js" type="text/javascript"></script>
 		<script src="resources/js/highlight.pack.js" type="text/javascript"></script>
@@ -15,30 +15,29 @@
 
 		<header>
 			<h1>Curl-to-PHP</h1>
-			<h2>Instantly convert <a href="http://curl.haxx.se/">curl</a> commands to <a href="http://php.net/">PHP</a> code</h2>
+			<h2>将<a href="http://curl.haxx.se/">CURL</a> 命令转换为 <a href="http://php.net/">PHP</a> 代码</h2>
 
 			<p>
-				This tool turns a Curl command into PHP code. Currently, it knows the following options: -d/--data/--data-binary, -F/--form, -H/--header, -I/--head, -u/--user, compressed, ---url and -X/--request. There's probably bugs; please <a href="https://github.com/incarnate/curl-to-php">contribute on GitHub</a>!
+			 将CURL命令行转为PHP代码。<br />
+			 当前可以转换的参数： -d/--data/--data-binary, -F/--form, -H/--header, -I/--head, -u/--user, compressed, ---url and -X/--request<br />
+			 如果发现BUG，请去please <a href="https://github.com/incarnate/curl-to-php">GitHub curl-to-php</a>反馈!
 			</p>
-
 			<p>
-				This script derives from Matt Holt's excellent <a href="https://github.com/mholt/curl-to-go">curl-to-Go</a>.
+				该脚本源自Matt Holt的<a href="https://github.com/mholt/curl-to-go">curl-to-Go</a>.
 			</p>
 
 			<p class="examples">
-				<a href="javascript:" id="example1">Example 1</a> &middot;
-				<a href="javascript:" id="example2">Example 2</a> &middot;
-				<a href="javascript:" id="example3">Example 3</a> &middot;
-				<a href="javascript:" id="example4">Example 4</a> &middot;
-				<a href="javascript:" id="example5">Example 5</a>
+				<a href="javascript:" id="example1">示例 1</a> &middot;
+				<a href="javascript:" id="example2">示例 2</a> &middot;
+				<a href="javascript:" id="example3">示例 3</a> &middot;
+				<a href="javascript:" id="example4">示例 4</a> &middot;
+				<a href="javascript:" id="example5">示例 5</a>
+			</p>
 		</header>
-
 		<main>
-			<textarea id="input" rows="4" placeholder="Paste curl here"></textarea>
+			<textarea id="input" rows="4" placeholder="将CURL命令及参数粘贴到这里"></textarea>
 			<div id="output"></div>
 		</main>
-
-
 		<footer>
 			&copy; 2017 - John C <a href="https://github.com/incarnate/curl-to-php">View on GitHub</a> - <a id="dark" href="javascript:">dark mode</a>
 		</footer>
